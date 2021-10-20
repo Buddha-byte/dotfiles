@@ -120,8 +120,5 @@ alias cat="bat"
 # for using special shell mode: cht.sh --shell
 alias cht="cht.sh"
 
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # ===== Neofetch =====
 neofetch
