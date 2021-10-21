@@ -2,7 +2,7 @@
 
 # Dotfiles storing
 
-![arch linux](https://dotfiles.github.io/images/dotfiles-logo.png)
+![](https://dotfiles.github.io/images/dotfiles-logo.png)
 
 The most elegant approach to storing dotfiles 👍 😃 <br/>
 You need to use bare repository, all steps in the description below:
