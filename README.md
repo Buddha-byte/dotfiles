@@ -1,4 +1,4 @@
-?py_buddha=flat-square&logo=appveyor
+https://img.shields.io/badge/py__buddha%2Fwalvater.wotan7%40gmail.com-blogs-green
 
 The most elegant approach to storing dotfiles 👍 😃
 You need to use bare repository, all steps in the description below
