@@ -10,6 +10,6 @@ You need to use bare repository, all steps in the description below
 - Step 3: config config --local status.showUntrackedFiles no
 - Step 4: echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 
-I use info from am article, following a link below:
-[click!](https://www.atlassian.com/git/tutorials/dotfiles)
+> I use info from an article, following a link below: 
+> [click!](https://www.atlassian.com/git/tutorials/dotfiles)
 
