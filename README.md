@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/walvater.wotan7%40gmail.com-py__buddha-green) 
+
 # Dotfiles storing
 
 ![arch linux](https://dotfiles.github.io/images/dotfiles-logo.png)
