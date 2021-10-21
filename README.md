@@ -10,3 +10,5 @@ You need to use bare repository, all steps in the description below
 
 I use info from am article, following a link below:
 [click!](https://www.atlassian.com/git/tutorials/dotfiles)
+
+My [.zshrc](https://github.com/Buddha-byte/dotfiles/blob/main/.zshrc)
