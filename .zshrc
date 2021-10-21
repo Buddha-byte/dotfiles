@@ -119,6 +119,7 @@ alias cat="bat"
 # https://github.com/chubin/cheat.sh
 # for using special shell mode: cht.sh --shell
 alias cht="cht.sh"
-
+# ===== Fonts =====
+alias fc-list="fc-list | awk '{print $1}' | sed 's/://g'"
 # ===== Neofetch =====
 neofetch
