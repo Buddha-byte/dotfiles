@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 # _____ Neovim ______
 export EDITOR="nvim"
-
+export PATH="/home/py_buddha/.bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
