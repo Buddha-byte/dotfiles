@@ -110,7 +110,7 @@ export PATH="/home/py_buddha/.bin:$PATH"
 # ===== Aliases =====
 alias config='/usr/bin/git --git-dir=$HOME/Documents/dotfiles/ --work-tree=$HOME'
 alias vim="nvim"
-
+alias sudo="sudo "
 # ===== Rust apps =====
 alias ls="exa --long --header --git"
 alias cat="bat"
@@ -121,5 +121,12 @@ alias cat="bat"
 alias cht="cht.sh"
 # ===== Fonts =====
 alias fc-list="fc-list | awk '{print $1}' | sed 's/://g'"
+
+# ===== Bash scripting =====
+alias fusb="formatusb.sh"
 # ===== Neofetch =====
 neofetch
+
+# ===== Starship prompt =====
+eval "$(starship init zsh)"
+
