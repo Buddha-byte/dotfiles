@@ -85,7 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # ===== User configuration=====
 
 # _____ Neovim ______
-export EDITOR="nvim"
+export VISUAL="nvim"
+export EDITOR="$VISUAL"
 export PATH="/home/py_buddha/.bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
