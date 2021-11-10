@@ -112,6 +112,9 @@ export PATH="/home/py_buddha/.bin:$PATH"
 alias config='/usr/bin/git --git-dir=$HOME/Documents/dotfiles/ --work-tree=$HOME'
 alias vim="nvim"
 alias sudo="sudo "
+alias plmk="playlistmake.sh"
+alias ip="ip -color=auto"
+alias grep="grep --color=auto"
 # ===== Rust apps =====
 alias ls="exa --long --header --git"
 alias cat="bat"
@@ -131,3 +134,6 @@ neofetch
 # ===== Starship prompt =====
 eval "$(starship init zsh)"
 
+# ===== vifm =====
+# alias vifm="source ~/.bin/vf"
+# alias fm="'cd "$(/usr/bin/vifm --choose-dir - $@)"'"
