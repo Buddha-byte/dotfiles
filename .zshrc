@@ -109,7 +109,7 @@ export PATH="/home/py_buddha/.bin:$PATH"
 # For a full list of active aliases, run `alias`.
 #
 # ===== Aliases =====
-alias config='/usr/bin/git --git-dir=$HOME/Documents/dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim="nvim"
 alias sudo="sudo "
 alias plmk="playlistmake.sh"

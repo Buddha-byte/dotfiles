@@ -21,6 +21,9 @@ filetype indent on      " load filetype-specific indent files
 
 inoremap jk <esc>
 
+" ===== Vim plug section =====
+" for installing vim plug use link:
+" https://github.com/junegunn/vim-plug
 
 call plug#begin('~/.vim/plugged')
 
