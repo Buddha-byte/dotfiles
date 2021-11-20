@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
 export PATH="/home/py_buddha/.bin:$PATH"
+export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
