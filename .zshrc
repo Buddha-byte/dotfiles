@@ -132,6 +132,8 @@ alias fusb="formatusb.sh"
 neofetch
 
 # ===== Starship prompt =====
+# installation: sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
 eval "$(starship init zsh)"
 
 # ===== vifm =====
