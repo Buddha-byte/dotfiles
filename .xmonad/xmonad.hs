@@ -6,6 +6,8 @@ import XMonad
 import Data.Monoid
 import System.Exit
 import XMonad.Util.SpawnOnce
+import XMonad.Util.Run
+import XMonad.Hooks.ManageDocks
 import XMonad.Actions.Volume
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -13,7 +15,8 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "alacritty"
+myTerminal      = "alacritty"   -- Sets default terminal
+myTextEditor    = "nvim"    -- Sets default text editor
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -182,7 +185,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = tiled ||| Mirror tiled ||| Full
+myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -254,7 +257,10 @@ myStartupHook = do
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad defaults
+main = do
+
+    xmproc <- spawnPipe "xmobar /home/py_buddha/.config/xmobar/xmobarrc"
+    xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
