@@ -1,4 +1,5 @@
 # ===== MY CONFIGURATION =====
+# my email: walvater.wotan7@gmail.com
 #
 #
 # If you come from bash you might have to change your $PATH.
