@@ -13,4 +13,7 @@ You need to use bare repository, all steps in the description below:
 - Step 4: `echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc`
 
 > I use info from an article, follow a link below: 
-> [click!](https://www.atlassian.com/git/tutorials/dotfiles)
+> [click!](https://www.atlassian.com/git/tutorials/dotfiles)<br/>
+
+> If you need some extra stuff:
+> [click!](https://github.com/Buddha-byte/bash-scripts/blob/master/configBareRepo.sh)
