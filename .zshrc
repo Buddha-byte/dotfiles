@@ -78,6 +78,7 @@ plugins=(git
 	 copyfile
 	 dirhistory
 	 history
+     virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -87,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin:$PATH"
+export PATH="/home/py_buddha/.bin/bash-scripts:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -140,3 +141,23 @@ eval "$(starship init zsh)"
 # ===== vifm =====
 # alias vifm="source ~/.bin/vf"
 # alias fm="'cd "$(/usr/bin/vifm --choose-dir - $@)"'"
+#
+## ===== command-time plugin =====
+## source: https://github.com/popstas/zsh-command-time
+##
+#
+## If command execution time above min. time, plugins will not output time.
+#ZSH_COMMAND_TIME_MIN_SECONDS=3
+#
+## Message to display (set to "" for disable).
+#ZSH_COMMAND_TIME_MSG="Execution time: %s sec"
+#
+## Message color.
+#ZSH_COMMAND_TIME_COLOR="cyan"
+#
+## Exclude some commands
+#ZSH_COMMAND_TIME_EXCLUDE=(vim mcedit)
+#
+# ===== MINICONDA =====
+#
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

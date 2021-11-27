@@ -1,10 +1,5 @@
 # ~/.config/starship.toml
 
-[battery]
-full_symbol = "🔋"
-charging_symbol = "🔌"
-discharging_symbol = "⚡"
-
 [[battery.display]]
 threshold = 30
 style = "bold red"
@@ -74,12 +69,6 @@ style = "bold green"
 [rust]
 format = "[$symbol$version]($style) "
 style = "bold green"
-
-[time]
-time_format = "%T"
-format = "🕙 $time($style) "
-style = "bright-white"
-disabled = false
 
 [username]
 style_user = "bold dimmed blue"
