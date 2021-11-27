@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin/bash-scripts:$PATH"
+export PATH="/home/py_buddha/.bin/bash/:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -115,7 +115,10 @@ export PAGER="most"
 # For a full list of active aliases, run `alias`.
 #
 # ===== Aliases =====
+# -- bare repo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias confbare="configBareRepo.sh"
+# -- others --
 alias vim="nvim"
 alias sudo="sudo "
 alias plmk="playlistmake.sh"
