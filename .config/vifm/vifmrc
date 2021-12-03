@@ -174,7 +174,7 @@ fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
         \ {View in zathura}
-        \ zathura %f,
+        \ apvlv %f,
         \ {View in gv}
         \ gv %c %i &,
 
@@ -201,7 +201,7 @@ filextype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
           \*.as[fx]},
          \<video/*>
         \ {View using celluloid}
-        \ celluloid %f & 2>/dev/null, 
+        \ celluloid %f, 
         \ {View using ffplay}
         \ ffplay -fs -autoexit %f,
         \ {View using Dragon}
@@ -234,7 +234,7 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 " Images
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {View in gwenview}
-        \ gwenview %f,
+        \ nomacs %f,
         \ {View in sxiv}
         \ sxiv %f,
         \ {View in gpicview}

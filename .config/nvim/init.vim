@@ -265,3 +265,15 @@ set colorcolumn=79
 autocmd FileType python map <buffer> <C-r> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <C-r> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+"DIY autoclosing
+inoremap (; ();<left><left>
+inoremap [; [];<left><left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap {<cr> {<cr>}<esc>O
+inoremap (<cr> (<cr>)<esc>O
+inoremap [<cr> [<cr>]<esc>O
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ` ``<left>
+inoremap ``` ```<cr>```<esc>O

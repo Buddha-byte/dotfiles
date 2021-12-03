@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin/bash/:$PATH"
+export PATH="/home/py_buddha/.bin/bash/:$HOME:bin:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -127,7 +127,8 @@ alias grep="grep --color=auto"
 # ===== Rust apps =====
 alias ls="exa --long --header --git"
 alias cat="bat"
-
+# ===== yt-dlp =====
+alias yt-mq="yt-dlp -f 'bv+ba/b'"
 # ===== cheat.sh =====
 # https://github.com/chubin/cheat.sh
 # for using special shell mode: cht.sh --shell
