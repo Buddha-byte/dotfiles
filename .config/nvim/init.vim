@@ -270,6 +270,7 @@ inoremap (; ();<left><left>
 inoremap [; [];<left><left>
 inoremap ( ()<left>
 inoremap [ []<left>
+inoremap { {}<left>
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>)<esc>O
 inoremap [<cr> [<cr>]<esc>O

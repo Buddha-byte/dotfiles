@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin/bash/:$HOME:bin:$PATH"
+export PATH="/home/py_buddha/.bin/bash/:$HOME:.local/bin:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -124,11 +124,13 @@ alias sudo="sudo "
 alias plmk="playlistmake.sh"
 alias ip="ip -color=auto"
 alias grep="grep --color=auto"
+alias vifm="/home/py_buddha/.config/vifm/scripts/vifmrun"
 # ===== Rust apps =====
 alias ls="exa --long --header --git"
 alias cat="bat"
 # ===== yt-dlp =====
-alias yt-mq="yt-dlp -f 'bv+ba/b'"
+alias yt-mq="yt-dlp -f 'mp4/bv+ba/b'"
+alias yt-af="yt-dlp -f 'ba' -x --audio-format mp3"
 # ===== cheat.sh =====
 # https://github.com/chubin/cheat.sh
 # for using special shell mode: cht.sh --shell
