@@ -8,6 +8,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/py_buddha/.oh-my-zsh"
 
+# Python virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/bin/virtualenvwrapper_lazy.sh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -125,6 +130,8 @@ alias plmk="playlistmake.sh"
 alias ip="ip -color=auto"
 alias grep="grep --color=auto"
 alias vifm="/home/py_buddha/.config/vifm/scripts/vifmrun"
+# ===== Python =====
+alias venv="cenv.sh"
 # ===== Rust apps =====
 alias ls="exa --long --header --git"
 alias cat="bat"

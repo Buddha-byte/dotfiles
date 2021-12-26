@@ -10,6 +10,7 @@ set number
 set noswapfile
 set scrolloff=7
 set clipboard=unnamedplus
+set number relativenumber
 
 set tabstop=4
 set softtabstop=4
@@ -19,7 +20,9 @@ set autoindent
 set fileformat=unix
 filetype indent on      " load filetype-specific indent files
 
+" Escape key bindings
 inoremap jk <esc>
+inoremap <c-s> <esc>:w<CR>
 
 " ===== Vim plug section =====
 " for installing vim plug use link:
@@ -33,6 +36,8 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'lambdalisue/suda.vim'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
 
 " color schemas
@@ -265,6 +270,9 @@ set colorcolumn=79
 autocmd FileType python map <buffer> <C-r> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <C-r> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+" Python editing
+nnoremap <c-c> I#<esc>
+
 "DIY autoclosing
 inoremap (; ();<left><left>
 inoremap [; [];<left><left>
@@ -278,3 +286,8 @@ inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ` ``<left>
 inoremap ``` ```<cr>```<esc>O
+
+" NERDTree
+nnoremap <leader>/ :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+
