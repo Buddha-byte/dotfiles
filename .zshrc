@@ -147,6 +147,8 @@ alias fc-list="fc-list | awk '{print $1}' | sed 's/://g'"
 
 # ===== Bash scripting =====
 alias fusb="formatusb.sh"
+# ===== Pacman =====
+alias rmor="(pacman -Rs $(pacman -Qdtq))"
 # ===== Neofetch =====
 neofetch
 

@@ -24,6 +24,10 @@ set syscalls
 
 set trash
 
+" Tab stop
+
+set tabstop=4
+
 " This is how many directories to store in the directory history.
 
 set history=100
@@ -64,7 +68,7 @@ colorscheme distrotube
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
+set timefmt=%d/%m/%y\ %H:%M
 
 " Show list of matches on tab completion in command-line mode
 
@@ -421,7 +425,8 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" set viewcolumns=-{name}..,6{}.
+set viewcolumns=-{name}..,{ext},{size},16{mtime}
+
 
 " Filter-out build and temporary files
 "
@@ -430,6 +435,9 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 " ------------------------------------------------------------------------------
 
 " Sample mappings
+
+" Clear search results"
+nnoremap ,<space> :nohlsearch<cr>
 
 "Open all images in current directory in sxiv thumbnail mode
 nnoremap sx :!sxiv -t %d & <cr>
@@ -466,11 +474,15 @@ nnoremap ,t :!xterm &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
-" Open gvim to edit vifmrc
+" Open nvim to edit vifmrc
 nnoremap ,C :!nvim --remote-tab-silent $MYVIFMRC &<cr>
 
 " Toggle wrap setting on ,w key
 nnoremap ,w :set wrap!<cr>
+
+" Sort parameters
+
+map <c-s> :set sort=-mtime,+name<cr>
 
 " Example of standard two-panel file managers mappings
 nnoremap <f3> :!less %f<cr>
