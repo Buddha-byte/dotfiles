@@ -38,6 +38,8 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'lambdalisue/suda.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 
 " color schemas
