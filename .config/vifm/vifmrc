@@ -207,7 +207,7 @@ filextype *.m3u,*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
          \*.as[fx]
         \ {View using ffplay}
-        \ celluloid %f 2>/dev/null &,
+        \ celluloid %f 2>/dev/null &, 
         \ {View using Dragon}
         \ dragon %f:p,
         \ {View using mplayer}
@@ -425,7 +425,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-set viewcolumns=-{name}..,{ext},{size},16{mtime}
+set viewcolumns=-{name},{size},16{mtime}
 
 
 " Filter-out build and temporary files

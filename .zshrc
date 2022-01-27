@@ -121,35 +121,10 @@ export PAGER="most"
 # For a full list of active aliases, run `alias`.
 #
 # ===== Aliases =====
-# -- bare repo
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias confbare="configBareRepo.sh"
-# -- others --
-alias vim="nvim"
-alias sudo="sudo "
-alias plmk="playlistmake.sh"
-alias ip="ip -color=auto"
-alias grep="grep --color=auto"
-alias vifm="/home/py_buddha/.config/vifm/scripts/vifmrun"
-# ===== Python =====
-alias venv="cenv.sh"
-# ===== Rust apps =====
-alias ls="exa --long --header --git"
-alias cat="bat"
-# ===== yt-dlp =====
-alias yt-mq="yt-dlp -f 'mp4/bv+ba/b'"
-alias yt-af="yt-dlp -f 'ba' -x --audio-format mp3"
-# ===== cheat.sh =====
-# https://github.com/chubin/cheat.sh
-# for using special shell mode: cht.sh --shell
-alias cht="cht.sh"
-# ===== Fonts =====
-alias fc-list="fc-list | awk '{print $1}' | sed 's/://g'"
+if [ -f ~/.zsh_aliases ];then
+    . ~/.zsh_aliases
+fi
 
-# ===== Bash scripting =====
-alias fusb="formatusb.sh"
-# ===== Pacman =====
-alias rmor="(pacman -Rs $(pacman -Qdtq))"
 # ===== Neofetch =====
 neofetch
 

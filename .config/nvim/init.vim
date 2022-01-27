@@ -1,4 +1,5 @@
 " ===== My configuration =====
+" vim colo
 "
 
 " ===== Language =====
@@ -11,6 +12,7 @@ set noswapfile
 set scrolloff=7
 set clipboard=unnamedplus
 set number relativenumber
+syntax enable
 
 set tabstop=4
 set softtabstop=4
@@ -40,12 +42,13 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 
-" color schemas
+" color schemes
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
 Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'kaicataldo/material.vim'
 Plug 'ayu-theme/ayu-vim'
 
 " For JS/JSX
