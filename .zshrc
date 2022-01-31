@@ -121,6 +121,7 @@ export PAGER="most"
 # For a full list of active aliases, run `alias`.
 #
 # ===== Aliases =====
+# Store all my aliases in the separate file
 if [ -f ~/.zsh_aliases ];then
     . ~/.zsh_aliases
 fi
@@ -133,10 +134,6 @@ neofetch
 
 eval "$(starship init zsh)"
 
-# ===== vifm =====
-# alias vifm="source ~/.bin/vf"
-# alias fm="'cd "$(/usr/bin/vifm --choose-dir - $@)"'"
-#
 ## ===== command-time plugin =====
 ## source: https://github.com/popstas/zsh-command-time
 ##

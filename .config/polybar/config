@@ -144,7 +144,7 @@ wrapping-scroll = false
 ; NOTE: The <label> needs to match the name of the i3 workspace
 ; Neither <label> nor <icon> can contain a semicolon (;)
 ws-icon-0 = 1;
-ws-icon-1 = 2;
+ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;♝
 ws-icon-4 = 5;♞
@@ -295,8 +295,8 @@ format-volume = <label-volume> <bar-volume>
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted = 🔇MUTED
+label-muted-foreground = #ff2424
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -426,9 +426,12 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
-; vim:ft=dosini
 
 [module/updates-pacman-aurhelper]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
 interval = 600
+
+; Syntax highlight in vim for Polybar
+; always put it at the end of the config
+; vim:ft=dosini
