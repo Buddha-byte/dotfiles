@@ -131,6 +131,10 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+p exec /home/py_buddha/.bin/bash/prompt.sh "Shutdown?" $shutdown
 bindsym $mod+Shift+o exec /home/py_buddha/.bin/bash/prompt.sh "Reboot?" $reboot
 bindsym $mod+Shift+q exec /home/py_buddha/.bin/bash/prompt.sh "Logout?" $logout
+
+# mount and umount devices
+bindsym $mod+Shift+m exec /home/py_buddha/.bin/bash/DmenuMount.sh
+bindsym $mod+Shift+u exec /home/py_buddha/.bin/bash/DmenuUmount.sh
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -229,4 +233,4 @@ gaps inner $inner_gaps
 gaps outer $outer_gaps
 
 # border color
-client.focused #555555 #5175d8 #ffffff #2e9ef4     #CC0000
+client.focused #555555 #5175d8 #ffffff #54e3b4     #CC0000

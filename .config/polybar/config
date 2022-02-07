@@ -105,6 +105,7 @@ interval = 25
 
 mount-0 = /
 mount-1 = /home/py_buddha
+;mount-1 = /mnt
 
 label-mounted =  [%{F#0a81f5}%mountpoint%%{F-}]: %free%
 label-unmounted = %mountpoint% not mounted
