@@ -84,7 +84,7 @@ plugins=(git
      zsh-syntax-highlighting
 	 sudo
 	 web-search
-	 copydir
+	 copypath
 	 copyfile
 	 dirhistory
 	 history
