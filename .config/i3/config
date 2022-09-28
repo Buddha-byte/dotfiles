@@ -36,8 +36,12 @@ font pango:Hack Nerd Font 11
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# ===== Startup sound =====
+#exec --no-startup-id mpv --no
 # ===== Autostart apps =====
+exec --no-startup-id /usr/bin/firefox
 exec --no-startup-id /usr/bin/qbittorrent
+exec --no-startup-id /usr/bin/redshift
 # ===== Assign  applications to Workspace =====
 for_window [class="qBittorrent"] move to workspace $ws2
 
