@@ -157,7 +157,7 @@ ws-icon-default = ♟
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 5
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
@@ -392,7 +392,7 @@ label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
-ramp-1 = 
+ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 

@@ -75,6 +75,7 @@ bindsym $mod+x kill
 # ===== Shortcuts for apps =====
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+p exec --no-startup-id rofi -show run
+bindsym $mod+b exec --no-startup-id /usr/bin/firefox
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -137,8 +138,8 @@ bindsym $mod+Shift+o exec /home/py_buddha/.bin/bash/prompt.sh "Reboot?" $reboot
 bindsym $mod+Shift+q exec /home/py_buddha/.bin/bash/prompt.sh "Logout?" $logout
 
 # mount and umount devices
-bindsym $mod+Shift+m exec /home/py_buddha/.bin/bash/DmenuMount.sh
-bindsym $mod+Shift+u exec /home/py_buddha/.bin/bash/DmenuUmount.sh
+bindsym $mod+Shift+F9 exec /home/py_buddha/.bin/bash/DmenuMount.sh
+bindsym $mod+Shift+F10 exec /home/py_buddha/.bin/bash/DmenuUmount.sh
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"

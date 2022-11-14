@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin/bash/:$HOME:.local/bin:$PATH"
+export PATH="/home/py_buddha/.bin/bash/:$HOME/.local/bin:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 

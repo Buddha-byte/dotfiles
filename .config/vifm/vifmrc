@@ -345,6 +345,11 @@ filetype *.7z
        \ FUSE_MOUNT|fuse-7z %SOURCE_FILE %DESTINATION_DIR,
 fileviewer *.7z 7z l %c
 
+" view contents of archive files on opening them
+filetype *.7z,*.bz2,*.cab,*.cpio,*.deb,*.gz,
+        \*.msi,*.pkg,*.rar,*.tar,*.tgz,*.xz,*.zip
+        \ als %f | less
+
 " Office files
 filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
 fileviewer *.doc catdoc %c
@@ -416,7 +421,7 @@ set classify+=' ::*.doc,,*.docx::, ::*.xls,,*.xls[mx]::, ::*.pptx,,*.pp
 " Like in previous versions of vifm
 " set vifminfo=options,filetypes,commands,bookmarks,dhistory,state,cs
 " Like in vi
-set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
+set vifminfo=dhistory,chistory,state,tui,shistory,
     \phistory,fhistory,dirstack,registers,bookmarks,bmarks
 
 " ------------------------------------------------------------------------------
@@ -435,6 +440,12 @@ set viewcolumns=-{name},{size},16{mtime}
 " ------------------------------------------------------------------------------
 
 " Sample mappings
+
+" Archives unpack
+" silently extract selected archives in background
+command extract aunpack -e %f &>/dev/null &
+" map extraction command
+nnoremap ex :extract<CR>
 
 " Clear search results"
 nnoremap ,<space> :nohlsearch<cr>

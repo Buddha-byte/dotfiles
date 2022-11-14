@@ -1,6 +1,5 @@
 " ===== My configuration =====
-" vim colo
-"
+
 
 " ===== Language =====
 " language en_US
@@ -54,6 +53,15 @@ Plug 'ayu-theme/ayu-vim'
 " For JS/JSX
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+
+"" Bash language server(bashls)
+"Plug 'autozimu/LanguageClient-neovim', {
+"    \ 'branch': 'next',
+"    \ 'do': 'bash install.sh',
+"    \ }
+
+"" Conquer of Completion(CoC)
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -178,7 +186,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'rust_analyzer' }
+local servers = { 'pyright', 'rust_analyzer', 'bashls', 'luau_lsp' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -296,3 +304,5 @@ inoremap ``` ```<cr>```<esc>O
 nnoremap <leader>/ :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
+" My own commands
+command Yt :%s/ \[.*\]//g
