@@ -83,9 +83,11 @@ endif
 "colorscheme ayu
 
 
-
+" Search behaviour
 " turn off search highlight
 nnoremap ,<space> :nohlsearch<CR>
+" count search matching
+nnoremap <C-s> :%s///gn<CR>
 
 
 

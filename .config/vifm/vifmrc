@@ -62,7 +62,7 @@ set norunexec
 " Selected color scheme
 " The following line will cause issues if using vifm.vim with regular vim.
 " Either use neovim or comment out the following line.
-colorscheme distrotube
+colorscheme matrix
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -108,7 +108,10 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+" set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+highlight User1 ctermbg=none ctermfg=none cterm=none
+highlight User2 ctermbg=none ctermfg=none cterm=reverse
+set statusline="%1*%A %2* %u:%g %1* %10E %2* 👉 %d %1* %{extcached('file_info', expand('%c'), 'file_info.sh ' . expand('%c'))}%=💽 %a"
 
 " Set line numbers to show
 
@@ -503,6 +506,12 @@ nnoremap <f6> :move<cr>
 nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
 
+" Open current directory in opposite pane
+nnoremap <a-z> :sync %c<cr>
+
+" vifm disk usage
+nmap du :!du -s -BM 1&gt;&amp;2 &amp;&lt;cr&gt;
+nmap df :!df . -BM 1&gt;&amp;2 &amp;&lt;cr&gt;
 " ------------------------------------------------------------------------------
 
 " Various customization examples
