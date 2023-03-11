@@ -1,0 +1,8 @@
+# Editors
+#
+alias vim='/usr/bin/nvim'
+
+# Git aliases
+#
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias confm='~/.local/bin/configBareRepo.sh'
