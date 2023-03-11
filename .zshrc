@@ -8,10 +8,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/py_buddha/.oh-my-zsh"
 
-# Python virtualenvwrapper
-export WORKON_HOME=~/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-source /usr/bin/virtualenvwrapper_lazy.sh
+## Python virtualenvwrapper
+#export WORKON_HOME=~/.virtualenvs
+#export PROJECT_HOME=$HOME/Projects
+#source /usr/bin/virtualenvwrapper_lazy.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,7 +79,8 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git
+plugins=(
+     git
 	 zsh-autosuggestions
      zsh-syntax-highlighting
 	 sudo
@@ -132,7 +133,7 @@ neofetch
 # ===== Starship prompt =====
 # installation: sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 ## ===== command-time plugin =====
 ## source: https://github.com/popstas/zsh-command-time
@@ -155,3 +156,4 @@ eval "$(starship init zsh)"
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 #
 #
+

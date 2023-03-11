@@ -29,7 +29,7 @@ inoremap <c-s> <esc>:w<CR>
 " for installing vim plug use link:
 " https://github.com/junegunn/vim-plug
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugins')
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
