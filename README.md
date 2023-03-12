@@ -2,9 +2,14 @@
 The most convinient way to store all your config files.
 
 ## The most important commands
-`
+- `git init --bare $HOME/.cfg`
+- `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
+- `config config --local status.showUntrackedFiles no`
+- `echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc`  
 
-- [Installation](https://www.notion.so/Getting-Started-b3e37400a002463c80dd58dff6eddbd7)
-- [Usage](https://www.notion.so/Getting-Started-b3e37400a002463c80dd58dff6eddbd7)
-- [Contributing](https://www.notion.so/Getting-Started-b3e37400a002463c80dd58dff6eddbd7)
-- [License](https://www.notion.so/Getting-Started-b3e37400a002463c80dd58dff6eddbd7)
+
+
+
+If you need deeper explanation, just click below:
+
+[Original article](https://www.atlassian.com/git/tutorials/dotfiles)
