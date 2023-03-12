@@ -7,6 +7,19 @@ alias vim='/usr/bin/nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias confm='~/.local/bin/configBareRepo.sh'
 
-# yt-dlp
-
+# ====== yt-dlp ======
+#
+#This alias makes it easy to use yt instead of typing out yt-dlp every time you want to use the command.
 alias yt='yt-dlp'
+# This alias downloads only the audio of a video in mp3 format, which is useful for music.
+alias yta='yt -x --audio-format mp3'
+# This alias downloads the best video and audio quality up to 1080p.
+alias ytv='yt -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]"'
+# This alias downloads the best video and audio quality up to 720p.
+alias ytp='yt -f "bestvideo[height<=720]+bestaudio/best[height<=720]"'
+# This alias downloads the best video and audio quality up to 480p.
+alias ytm='yt -f "bestvideo[height<=480]+bestaudio/best[height<=480]"'
+# This alias saves the video metadata and thumbnail in addition to the video file.
+alias ytl='yt --write-info-json --write-thumbnail'
+# This alias downloads only the thumbnail of a video.
+alias yts='yt --get-thumbnail'
