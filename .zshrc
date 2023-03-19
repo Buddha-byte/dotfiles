@@ -8,11 +8,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/py_buddha/.oh-my-zsh"
 
-## Python virtualenvwrapper
-#export WORKON_HOME=~/.virtualenvs
-#export PROJECT_HOME=$HOME/Projects
-#source /usr/bin/virtualenvwrapper_lazy.sh
 
+# Python virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /home/py_buddha/.local/bin/virtualenvwrapper.sh
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PATH="/home/py_buddha/.bin/bash/:$HOME/.local/bin:$PATH"
+#export PATH="/home/py_buddha/.bin/bash/:$HOME/.local/bin:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -133,7 +133,7 @@ neofetch
 # ===== Starship prompt =====
 # installation: sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 ## ===== command-time plugin =====
 ## source: https://github.com/popstas/zsh-command-time
@@ -155,3 +155,7 @@ neofetch
 #
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 #
+# ===== Powerline config =====
+if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
+    source /usr/share/powerline/bindings/zsh/powerline.zsh
+fi

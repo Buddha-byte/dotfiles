@@ -23,3 +23,30 @@ alias ytm='yt -f "bestvideo[height<=480]+bestaudio/best[height<=480]"'
 alias ytl='yt --write-info-json --write-thumbnail'
 # This alias downloads only the thumbnail of a video.
 alias yts='yt --get-thumbnail'
+
+# ====== exa ======
+#
+# The most useful alias for exa from ChatGPT
+#
+# This is the simpliest alias
+alias ls='exa -lh'
+# This alias will display the files and directories in a long format, with Git status information.
+alias ll='exa -l --git'
+# This alias will display the files and directories sorted by modification time, with the most recent at the top.
+alias lt='exa -T'
+# This alias will display the files and directories sorted by modification time, with the oldest at the top.
+alias ltr='exa -T --reverse'
+# This alias will display the files and directories sorted by size, with the largest at the top.
+alias lS='exa -s size'
+# This alias will display the files and directories sorted by size, with the smallest at the top.
+alias lSr='exa -s size --reverse'
+# This alias will display all files and directories, including hidden ones.
+alias la='exa -a'
+# This alias will display files and directories recursively.
+alias lR='exa -R'
+# This alias will display files and directories in a long format, sorted by extension.
+alias lx='exa -l --sort=extension'
+# This alias will display files and directories in a long format, with type indicators (such as / for directories) added.
+alias lf='exa -l --classify'
+# This alias will display files and directories in a long format, with the order reversed.
+alias lr='exa -l --reverse'
