@@ -50,3 +50,27 @@ alias lx='exa -l --sort=extension'
 alias lf='exa -l --classify'
 # This alias will display files and directories in a long format, with the order reversed.
 alias lr='exa -l --reverse'
+
+# ===== rsync =====
+#
+#This alias preserve file attributes and permissions during the cope and display the progress of the copy operation
+alias cpv='rsync -ah --info=progress2'
+
+# ===== archive utilities =====
+# This alias will make unzip command quieter and will not display verbose output.
+alias unzip='unzip -q'
+# This alias will make unrar command extract files from the archive to the current directory.
+alias unrar='unrar x'
+# Create a compressed tar archive of a directory.
+alias tarc='tar -czvf'
+# Extract a compressed tar archive to the current directory.
+alias tarx='tar -xzvf'
+# Extract a compressed tar archive to a specified directory.
+alias tarex='tar -xzvf -C'
+# List the contents of a tar archive.
+alias tart='tar -tvf'
+# Delete a file or directory from a tar archive. 
+alias tard='tar --delete -f'
+
+
+

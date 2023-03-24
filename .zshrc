@@ -92,14 +92,19 @@ plugins=(
      virtualenv
 )
 
+# ===== Oh-my-zsh =====
 source $ZSH/oh-my-zsh.sh
+#
+# ===== Starship prompt =====
+# installation: sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+eval "$(starship init zsh)"
 
 # ===== User configuration=====
 
 # _____ Neovim ______
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-#export PATH="/home/py_buddha/.bin/bash/:$HOME/.local/bin:$PATH"
+export PATH="/home/py_buddha/.local/share/fonts:$PATH"
 export PAGER="most"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -130,10 +135,9 @@ fi
 # ===== Neofetch =====
 neofetch
 
-# ===== Starship prompt =====
-# installation: sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-eval "$(starship init zsh)"
+
+
 
 ## ===== command-time plugin =====
 ## source: https://github.com/popstas/zsh-command-time

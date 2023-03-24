@@ -105,11 +105,11 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Hack
+    family: Hack Nerd Font
     style: Regular
     size: 13
   bold:
-    family: Hack
+    family: Hack Nerd Font
     style: Bold
     size: 13
 
