@@ -72,5 +72,27 @@ alias tart='tar -tvf'
 # Delete a file or directory from a tar archive. 
 alias tard='tar --delete -f'
 
+# ===== pacman =====
+#
+# Update package lists and upgrade all packages.
+alias pupdate='sudo pacman -Syu'
+# Install a package.
+alias pinstall='sudo pacman -S'
+# Remove a package.
+alias premove='sudo pacman -R'
+# Search for a package in the repositories.
+alias psearch='pacman -Ss'
+# Display information about a package.
+alias pinfo='pacman -Qi'
+# List installed packages.
+alias plist='pacman -Q'
+# List files owned by a package.
+alias pfiles='pacman -Ql'
+# Clean package cache to free up disk space.
+alias pclean='sudo pacman -Sc'
+# Find and remove orphaned packages
+alias porhan='pacman -Rns $(pacman -Qtdq)'
 
-
+# ===== grep =====
+# Some the most useful aliases for grep
+#alias grep='grep -E'

@@ -160,6 +160,6 @@ neofetch
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 #
 # ===== Powerline config =====
-if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
-    source /usr/share/powerline/bindings/zsh/powerline.zsh
-fi
+#if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
+#    source /usr/share/powerline/bindings/zsh/powerline.zsh
+#fi
