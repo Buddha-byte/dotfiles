@@ -134,11 +134,7 @@ fi
 
 # ===== Neofetch =====
 neofetch
-
-
-
-
-
+#
 ## ===== command-time plugin =====
 ## source: https://github.com/popstas/zsh-command-time
 ##
