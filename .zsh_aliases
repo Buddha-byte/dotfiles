@@ -96,3 +96,6 @@ alias porhan='pacman -Rns $(pacman -Qtdq)'
 # ===== grep =====
 # Some the most useful aliases for grep
 #alias grep='grep -E'
+#
+# ===== cheat.sh =====
+alias ch='cht.sh'

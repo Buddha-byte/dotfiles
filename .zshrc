@@ -1,3 +1,4 @@
+
 # ===== MY CONFIGURATION =====
 # my email: walvater.wotan7@gmail.com
 #
