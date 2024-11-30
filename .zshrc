@@ -14,6 +14,10 @@ export ZSH="/home/py_buddha/.oh-my-zsh"
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
 source /home/py_buddha/.local/bin/virtualenvwrapper.sh
+
+# Default configuration directory
+export XDG_CONFIG_HOME=$HOME/.config
+#
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
